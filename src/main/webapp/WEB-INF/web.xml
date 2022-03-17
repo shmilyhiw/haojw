@@ -1,0 +1,49 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                   http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="false">
+
+
+
+  <servlet>
+    <servlet-name>infoTest</servlet-name>
+    <servlet-class>com.xj.sensitiveInfo.InfoTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>infoTest</servlet-name>
+    <url-pattern>/infoTest</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>readFile</servlet-name>
+    <servlet-class>com.xj.file.ReadFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>readFile</servlet-name>
+    <url-pattern>/readFile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>xssTest</servlet-name>
+    <servlet-class>com.xj.xss.XSSTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>xssTest</servlet-name>
+    <url-pattern>/xssTest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>httpTest</servlet-name>
+    <servlet-class>com.xj.http.HttpTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>httpTest</servlet-name>
+    <url-pattern>/httpTest</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
